@@ -1,0 +1,26 @@
+export const BATTLE_CONFIG = {
+  playerMonsterMaxHp: 30,
+  kweenMaxHp: 100,
+  kweenMaxShield: 20,
+  kweenStartingShield: 20,
+  kweenPattern: ["benchmark_brag", "score_surge", "royal_strike"],
+  abilityValues: {
+    soliHeal: 10,
+    giptooDamageReduction: 10,
+    coddyShieldRemoval: 15,
+    coddyDirectDamage: 10,
+    kweenShieldGain: 5,
+    kweenRoyalStrikeDamage: 8,
+    astraBonusDamage: 5,
+    astraCoddyShieldBonus: 8,
+    soliAssistHeal: 5,
+  },
+  damageBands: [
+    { minimum: 0, damage: 6 },
+    { minimum: 40, damage: 16 },
+    { minimum: 60, damage: 24 },
+    { minimum: 80, damage: 30 },
+  ],
+  liveTurnsPerBattle: 4,
+  evaluationWeights: { relevance: 0.25, reasoning: 0.25, counterargument: 0.2, evidence: 0.2, clarity: 0.1, argument: 0.85, prompt: 0.15 },
+} as const;
